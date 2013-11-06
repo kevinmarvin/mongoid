@@ -29,9 +29,9 @@ end
 
 # If we are using any Rack based application then we need the Mongoid rack
 # middleware to ensure our app is running properly.
-if defined?(Rack)
-  require "rack/mongoid"
-end
+# if defined?(Rack)
+#   require "rack/mongoid"
+# end
 
 # add english load path by default
 I18n.load_path << File.join(File.dirname(__FILE__), "config", "locales", "en.yml")
